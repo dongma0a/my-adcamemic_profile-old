@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>[ Dong Ma ]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+<!--                     <span><a href="#"><img border="0" width="170" src="images/csucy.png"/></a></span> -->
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+					
+					    <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a>
+                        </li>
+						
+						
+                        <!-- <li class="dropdown"> -->
+                            <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#"> -->
+                                <!-- Home<span class="caret"></span></a> -->
+                            <!-- <ul class="dropdown-menu"> -->
+                                <!-- <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li> -->
+                                <!-- <li><a href="bio.html">Biography</a></li> -->
+                                <!-- <li><a href="cv.html">CV (Web)</a></li> -->
+                                <!-- <li><a target="_blank" href="resume_2024.pdf">CV (PDF)</a></li> -->
+                            <!-- </ul> -->
+                        <!-- </li> -->
+						
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+                        </li> 
+						
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Publications</a>
+                        </li>
+						
+                        <!-- <li class="dropdown"> -->
+                            <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#"> -->
+                                <!-- Publications<span class="caret"></span></a> -->
+                            <!-- <ul class="dropdown-menu"> -->
+                                <!-- <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li> -->
+                                <!-- <li><a href="publications/">All</a></li> -->
+                            <!-- </ul> -->
+                        <!-- </li> -->
+						
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
+                        </li>
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-talks-content').show();" href="#talks">Talks</a>
+                        </li>
+                        <!-- <li class="page-scroll"> -->
+                            <!-- <a href="talks/">Talks</a> -->
+                        <!-- </li> -->
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
+                        </li>
+                        
+                        <!-- <li class="page-scroll"> -->
+                            <!-- <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a> -->
+                        <!-- </li> -->
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+        <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:40px">
+            <div class="container">
+                <div align="left" class="col-md-3">
+                    <a target="_blank" href="images/PR_Dong_hd.jpg">
+                        <!--<img id="mobile-img" src="images/PR_Dong_hd.jpg" width="225" border="0" height="240" alt=""></a>-->
+			<img id="mobile-img" src="images/PR_Dong_hd.jpg"  border="10" height="250" alt=""></a>
+                </div>
+                <div align="left" class="col-md-4">
+                    <h2>Dong Ma
+<!--                         <h5><i>Assistant Professor</i></h5> -->
+                    </h2>
+                    <h4><br>
+                    <h4>Assistant Professor<br>
+                        <a     </a><br>
+                        <a href="https://scis.smu.edu.sg/">School of Computing and Information Systems</a><br>
+						<a     </a><br>
+                        <a href="https://www.smu.edu.sg//">Singapore Management University</a><br>
+                        <a            </a><br>
+                        <!--
+                         P.O. Box 20537<br>
+                         1678 Nicosia, CYPRUS<br>-->
+<!--                         Tel/Fax: <a href="tel:0035722892755">+357-22892755</a> / <a href="tel:0035722892701">01</a><br/> -->
+                        Email:
+                        <script language="JavaScript">
+                            <!--
+                            document.write("&nbsp;");
+                            spiderjam('dongma','smu.edu.sg');
+                            -->
+                            </script><br/>
+<!--                         Lab: <a target="_blank" href="https://dmsl.cs.ucy.ac.cy/">http://dmsl.cs.ucy.ac.cy/</a><br> -->
+<!--                         Directions: <a target="_blank" href="https://goo.gl/FQCHMl">http://goo.gl/FQCHMl</a> -->
+                    </h4>
+<!--                     <h4><i>Expertise: Data Management in Computer Systems &amp; Networks</i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4> -->
+                    
+                </div>
+                
+                <!-- <i class="twittertop" style="display:none;" id="t1"> -->
+                    <!-- <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp; -->
+                        <!-- <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900" -->
+                            <!-- data-height="300">Tweets -->
+                            <!-- by @dmslucy</a> -->
+                        <!-- <script>!function (d, s, id) { -->
+                            <!-- var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; -->
+                            <!-- if (!d.getElementById(id)) { -->
+                                <!-- js = d.createElement(s); -->
+                                <!-- js.id = id; -->
+                                <!-- js.src = p + "://platform.twitter.com/widgets.js"; -->
+                                <!-- fjs.parentNode.insertBefore(js, fjs); -->
+                            <!-- } -->
+                        <!-- }(document, "script", "twitter-wjs");</script></center> -->
+                    <!-- </div> -->
+                <!-- </i> -->
+                
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>
+                
+            </div>
+        </section>
+        
+        <!-- Home Section -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        
+                        <p class="lead">
+			<p> 
+			<font color="black"> <span class="label label-danger">Moving</span> <a target="_blank" href="https://www.cst.cam.ac.uk/news/new-associate-professor-wearable-computing">I will join the Department of Computer Science and Technology, the University of Cambridge as an Associate Professor in Jan 2026</a>. If you are interested in working with me as a PhD, Master, or visiting student, feel free to drop me an email with your CV attached. 
+			</p>
+
+			<!--    
+			<p> 
+			<font color="black"><span class="label label-danger">Hiring</span><b> PhD: I am actively looking for self-motivated PhD candidates with a strong background in Computer Science or Electrical Engineering. If you 
+					have interests in the broad area of Mobile Computing, Internet of Things, and Artificial Intelligence, please feel free to contact 
+					me with your CV attached. Full scholarships will be provided to qualified candidates by the University or my funding. SMU is ranked 70 in the 
+					overall CS discipline and particularly No. 28 in the field of Mobile Computing and Human-computer Interaction worldwide, according to 
+				<a target="_blank" href="http://csrankings.org/#/index?mobile&world">CSRankings</a>.  </b></font>
+	                </p>	
+
+			 <p> 
+			<font color="black"><span class="label label-danger">Hiring</span><b> Research Engineer (RE): I have 2 RE positions available on health sensing and embedded machine learning. If you hold an bachelor or master degree and would like gain some research experience, feel free to reach out to me with you CV. The standard monthly salary for RE is 4700 SGD. </b></font>
+	                </p>
+			    
+			<p> 
+			<font color="black"><span class="label label-danger">Hiring</span><b> Visiting Research Student (VRS): I have 2-4 VRS positions available on health sensing, embedded machine learning, or general mobile computing. If you are currently a master or PhD candidate in other universities and would like a pursue research experience in Mobile Computing in SMU, please send me you CV. The selected candidates will be offered with stipend to support his/her life at Singapore (standard monthly stipend of 2700 SGD). </b></font>
+	                </p> -->
+			
+			<p class="lead">
+                        <p>
+                        I am currently an Assistant Professor at the School of Computing and Information Systems, <a target="_blank" href="https://www.smu.edu.sg/">Singapore Management University</a>. Before joining SMU, I was a postdoctoral researcher at the Department of Computer Science and Technology, <a target="_blank" href="https://www.cam.ac.uk/">University of Cambridge</a>, advised by Prof. <a target="_blank" href="https://www.cl.cam.ac.uk/~cm542/">Cecilia Mascolo</a>. Prior to that, I earned my PhD at the School of Computer Science and Engineering, <a target="_blank" href="https://www.unsw.edu.au/">University of New South Wales</a>, Australia in 2019, supervised by Prof. <a target="_blank" href="http://www.cse.unsw.edu.au/~mahbub/">Mahbub Hassan</a>, and Prof. <a target="_blank" href="https://sites.google.com/site/wenhuunsw/home">Wen Hu</a>. I also worked as a research assistant at DATA61-CSIRO, Australia from 2016 to 2019. I had my bachelor and master study in Communication Engineering from <a target="_blank" href="http://en.csu.edu.cn/">Central South University</a>, China, from 2010 to 2016. I am also a visitor at the University of Cambridge, UK since April 2025.</i>
+
+
+                        
+                        </p>
+                        <p>
+                        My research interests lie broadly in the area of mobile computing with a special focus on wearable-based human sensing systems. The goal of his research is to explore, design, and implement intelligent, efficient, and practical wearable systems to understand human behaviours (e.g., physical activities and interactions) and physiological states (e.g., vital signs) in real-world scenarios. Recently, I am particularly centred on robust health monitoring with wearable technology and tiny machining learning on embedded devices.</i>
+                        
+                        
+                        <p>
+<!--                             <a href="bio.html" class="btn-sm btn-primary">Biography &raquo;</a> -->
+<!--                         <a href="cv.html" class="btn-sm btn-primary">CV (Web)&raquo;</a> -->
+                        <a href="resume_2025.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+		
+		
+		 <!-- News Section -->
+         <section  name="news" id="news">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:10px" class="col-md-12">
+                     
+                     <b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>
+                     <div class="allshow" style="display:none;" id="tab-news-content">
+                         
+                         <hr class="star-primary"> 
+                         <h2>News </h2>
+                         <ul>
+				 <li><span class="label label-info">10/2025</span> Congrats to Changshuo who received the Distinguished Paper Award at the <a target="_blank" href="https://www.ubicomp.org/ubicomp-iswc-2025/">UbiComp 2025</a>!</li> 
+				 <li><span class="label label-info">10/2025</span> Congrats to Changshuo and Manh who received the Best Paper Award at the <a target="_blank" href="https://www.eventcreate.com/e/bodysys25">BodySys 2025</a>!</li> 
+				 <li><span class="label label-info">10/2025</span> Congrats to Manh who received the Best Oral Presentation Award at the <a target="_blank" href="https://www.sae-cae-2025.org/">Second Singapore-China Joint-Symposium on AI & Sustainability 2025</a>!</li> 
+				 <li><span class="label label-info">09/2025</span> Two papers accepted at IMWUT! Congrats to Yang and Qiang!
+				 <li><span class="label label-info">09/2025</span> I will be serving as a TPC member of <a target="_blank" href="https://www2026.thewebconf.org/organization/program-committee.html"> WWWW'26</a>.</li>
+			     <li><span class="label label-info">09/2025</span> One paper conditionally accepted at SenSys'26! Congrats to Changshuo & Manh!
+				 <li><span class="label label-info">07/2025</span> I will be serving as the Vice-General Chair at MobiSys'26. Looking forward to seeing you in Cambridge, UK!
+			     <li><span class="label label-info">07/2025</span> One paper accepted at ECAI! Congrats to Manh!
+			     <li><span class="label label-info">07/2025</span> Congrats to Xiao Ma who was awarded the 2025-2026 Dean's List at SCIS, SMU!! </li>
+			     <li><span class="label label-info">07/2025</span> Congrats to all my PhD students Xiao, Manh, and Changshuo who won the 2025-2026 SMU Presidential Doctoral Fellowship in Computing. Well done!!. </li>
+			     <li><span class="label label-info">06/2025</span> I will be serving as a TPC member of <a target="_blank" href="https://sensys.acm.org/2026/tpc_committee.html"> SenSys'26</a>.</li>
+			     <li><span class="label label-info">06/2025</span> I will be serving as a TPC member of <a target="_blank" href="http://intelligent-acoustics.org/2025/#committee"> IASA</a> workshop at MobiCom 2025.</li>
+			     <li><span class="label label-info">05/2025</span> I will be serving as the Publication Co-Chair at <a target="_blank" href="https://percom.org/organizing-committee/">PerCom’26</a>.
+			     <li><span class="label label-info">05/2025</span> I will be serving as a TPC member of <a target="_blank" href="https://www.eventcreate.com/e/bodysys25"> BodySys</a> workshop at UbiComp'25.</li>
+			     <li><span class="label label-info">05/2025</span> I will be serving as a TPC member of <a target="_blank" href="https://www.sigmobile.org/mobicom/2025/workshop_program.html#"> SmartWear</a> workshop at MobiCom 2025.</li>
+			     <li><span class="label label-info">04/2025</span> One paper accepted at ICML! Congrats to Manh!
+			     <li><span class="label label-info">04/2025</span> One paper accepted at TMC! Congrats to Xiao!
+			     <li><span class="label label-info">03/2025</span> Our PerCom'25 paper RespEar won the Mark Weiser Best Paper Award! Congratulations to all co-authors!
+			     <li><span class="label label-info">01/2025</span> One paper accepted at Nature Scientific Data!
+			     <li><span class="label label-info">12/2024</span> One paper accepted at CHI'25!
+			     <li><span class="label label-info">12/2024</span> Two papers accepted at PerCom'25!
+			     <li><span class="label label-info">12/2024</span> One paper conditionally accepted at MobiCom'25!
+			     <li><span class="label label-info">11/2024</span> I am honored to receive the <a target="_blank" href="https://research.google/programs-and-events/featured-research-collaborations/south-asia-southeast-asia-awards-recipients/">Google South Asia & Southeast Asia Research Award</a>. Thanks Google!!
+			     <li><span class="label label-info">11/2024</span> I will be serving as the PhD Forum Chair at <a target="_blank" href="https://wowmomconference2025.uta.edu/committees.html">WOWMOM’25</a>.
+			     <li><span class="label label-info">11/2024</span> Our research on breathing mode monitoring with earbuds has been highlighted by <a target="_blank" href="https://news.smu.edu.sg/news/2024/11/06/smu-unveils-new-research-monitoring-breathing-modes-ear-microphones">SMU Corporate Communications</a>, <a target="_blank" href="https://cityperspectives.smu.edu.sg/article/future-forward-how-wireless-earbuds-can-help-you-run-better-city">SMU City Perspectives</a>, and <a target="_blank" href="https://www.straitstimes.com/singapore/smu-team-develops-prototype-earbuds-to-monitor-how-runners-breath-and-their-foot-strikes">The STRAITS TIMES</a>.
+			     <li><span class="label label-info">10/2024</span> I will be serving as an <a target="_blank" href="https://dl.acm.org/journal/imwut/editorial-board">Associate Editor at IMWUT</a> since the 2024 November cycle. 
+			     <li><span class="label label-info">09/2024</span> Invited to write a <a target="_blank" href="https://www.nature.com/articles/s41928-024-01281-2">News & Views article</a> for Nature Electronics. 
+			     <li><span class="label label-info">09/2024</span> Congrats to Changshuo for his second IMWUT paper accepted!
+			     <li><span class="label label-info">09/2024</span> I will be serving as a Session Chair at <a target="_blank" href="https://www.ubicomp.org/ubicomp-iswc-2024/conference-program/">UbiComp 2024</a>, come and join the exciting presentations!
+			     <li><span class="label label-info">08/2024</span> I will be serving as a TPC member of <a target="_blank" href="https://humansys-workshop.github.io/"> HumanSys</a> workshop at SenSys 2024.</li>
+			     <li><span class="label label-info">07/2024</span> I will be serving as a TPC member at <a target="_blank" href="https://www.percom.org/technical-program-committee/">PerCom 2025</a>.
+			     <li><span class="label label-info">07/2024</span> I will be serving as a TPC member at <a target="_blank" href="https://www.sigmobile.org/mobicom/2025/committee.html">MobiCom 2025</a>.
+			     <li><span class="label label-info">07/2024</span> One paper accepted at EarComp 2024.
+			     <li><span class="label label-info">07/2024</span> Congrats to Xiao Ma who won the 2024-2025 SMU Presidential Doctoral Fellowship in Computing. Well done!! </li>
+			     <li><span class="label label-info">06/2024</span> I will be serving as Publication Co-chairs at <a target="_blank" href="https://www.percom.org/organizing-committee/"> PerCom 2025</a>. </li>
+			     <li><span class="label label-info">05/2024</span> I am honored to be invited for a keynote presentation at the <a target="_blank" href="https://ai-mobile-system.vercel.app/keynote"> Mobile AI System Workshop</a>, co-located with MobiSys'24. See you in Tokyo!
+			     <li><span class="label label-info">04/2024</span> One paper accepted at ACM IMWUT 2024. Congrats to Changshuo!
+			     <li><span class="label label-info">03/2024</span> Our PerCom'24 paper DiTMos won the Mark Weiser Best Paper Award! Congratulations to all co-authors!
+			     <li><span class="label label-info">03/2024</span> We are organizing the 10th <a target="_blank" href="https://www.eventcreate.com/e/bodysys24"> BodySys</a> Workshop, co-located with MobiSys'24 at Tokyo. Please consider submitting!</li>
+			     <li><span class="label label-info">03/2024</span> Two patents about respiratory monitoring have been filed!
+			     <li><span class="label label-info">03/2024</span> One paper accepted at Pervasive and Mobile Computing Journal (PMCJ).
+			     <li><span class="label label-info">02/2024</span> I will be serving as a TPC member at <a target="_blank" href="https://ipsn.acm.org/2024/postersdemos.html"> IPSN@Poster</a> 2024.</li>
+			     <li><span class="label label-info">01/2024</span> One paper accepted at IEEE IoTJ.
+			     <li><span class="label label-info">01/2024</span> One paper accepted at MDPI Sensors Journal.
+			     <li><span class="label label-info">12/2023</span> Two papers accepted at PerCom 2024.
+			     <li><span class="label label-info">11/2023</span> One paper accepted at IMWUT 2023.
+			     <li><span class="label label-info">11/2023</span> I will be serving as a TPC member at <a target="_blank" href="https://ewsn24.tii.ae/index.html"> EWSN</a> 2024.</li>
+			     <li><span class="label label-info">09/2023</span> I will be serving as a TPC member at <a target="_blank" href="https://www.sigmobile.org/mobisys/2024/#"> MobiSys</a> 2024.</li>
+			     <li><span class="label label-info">07/2023</span> I will be serving as a TPC member at <a target="_blank" href="https://www.sigmobile.org/mobicom/2024/committee.html#"> MobiCom</a> 2024.</li>
+			     <li><span class="label label-info">06/2023</span> I will be serving as a TPC member of <a target="_blank" href="http://www.esense.io/earcomp2023/"> EarComp</a> workshop at UbiComp 2023.</li>
+			     <li><span class="label label-info">05/2023</span> Our earable research was introduced by <a target="_blank" href="https://researchpod.org/health-medicine/mobile_health_head_worn_devices"> ResearchPod</a> .</li>
+			     <li><span class="label label-info">04/2023</span> Serving in the <a target="_blank" href="https://www.sigmobile.org/mobisys/2023/artifact.html"> Artifact Evaluation Committee</a> of <a target="_blank" href="https://www.sigmobile.org/mobisys/2023/index.html"> ACM MobiSys 2023</a>.</li>
+			     <li><span class="label label-info">03/2023</span> I will be serving as a TPC member of <a target="_blank" href="http://intelligent-acoustics.org/#committee">IASA</a> workshop at CPS-IoT Week 2023.</li>
+			     <li><span class="label label-info">03/2023</span> One paper accepted at EuroVis 2023.</li>
+			     <li><span class="label label-info">01/2023</span> I will be serving as a TPC member at EWSN 2023.</li>
+<!-- 			     <li><span class="label label-info">12/2022</span> One paper accepted at PerCom 2023.</li>
+			     <li><span class="label label-info">12/2022</span> One paper accepted at HotMobile 2023.</li>
+			     <li><span class="label label-info">09/2022</span> I will be serving as a TPC member at WWW 2023.</li>
+			     <li><span class="label label-info">08/2022</span> One paper accepted at MobiCom 2022.</li>
+		             <li><span class="label label-info">08/2022</span> One paper accepted at IEEE Pervasive Computing.</li>
+			     <li><span class="label label-info">02/2022</span> One paper accepted at ICASSP 2022.</li>
+			     <li><span class="label label-info">02/2022</span> One paper accepted at IEEE TMC.</li>
+			     <li><span class="label label-info">11/2021</span> I will be serving as the Video Chair at <a target="_blank" href="https://www.sigmobile.org/mobisys/2022/"> MobiSys 2022</a>.</li>
+			     <li><span class="label label-info">10/2021</span> I will be serving as the Publication Chair at <a target="_blank" href="https://hotmobile.org/2022/index.php?id=org"> HotMobile 2022</a>.</li>
+			     <li><span class="label label-info">10/2021</span> One paper accepted at IEEE Journal of Microelectromechanical Systems.</li>
+			     <li><span class="label label-info">08/2021</span> One paper accepted at MobiCom 2021.</li>
+			     <li><span class="label label-info">04/2021</span> One paper accepted at MobiSys 2021.</li>
+                             <li><span class="label label-info">10/2020</span> One paper accepted at IEEE TMC.</li>
+                             <li><span class="label label-info">12/2019</span> One paper accepted at IEEE COMST. </li> -->
+                             
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </section>
+		
+        
+
+        
+        
+        <!-- Research Section -->
+        <section  name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        
+<!--                         <h2>Selected Publications <a href="publications/" class="btn btn-primary">All Publications&raquo;</a></h2> -->
+                        <h2> Publications <a href="https://scholar.google.co.in/citations?user=roQg6_4AAAAJ&hl=en&oi=ao" class="btn btn-primary">Google Scholar &raquo;</a></h2>
+                        <h4>
+<!--                             <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/H-index"><font color=white>h-index</font></a>: 25
+                            </span>&nbsp;
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://scholar.google.com/citations?user=HCxwGIkAAAAJ&hl=en"><font color=white>Citations</font></a>: 2867
+                            </span>&nbsp;
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Erd&ouml;s_number"><font color="white">Erd&ouml;s #</font></a>: 3
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://orcid.org/0000-0002-7239-2387"><font color="white">ORCID</font></a>
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=35176841800"><font color="white">Scopus</font></a>
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://www.researcherid.com/rid/O-2301-2016"><font color="white">ResearcherID</font></a>
+                            </span> -->
+                            
+                            
+                        </h4>
+						
+		    <h5> * indicates  Equal Contribution, and <sup>†</sup> indicates Corresponding Author. </h5>  	
+
+                    <h3> Preprint </h3>  
+                        <ul>
+			    <li><span class="label label-success">ArXiv</span> <a target="_blank" href="https://arxiv.org/abs/2506.05720">"A Survey of Earable Technology: Trends, Tools, and the Road Ahead"</a> <br> Changshuo Hu*, Qiang Yang*, Yang Liu*, Tobias Röddiger, Kayla-Jade Butkow, Mathias Ciliberto, Adam Luke Pullin, Jake Stuchbury-Wass, Mahbub Hassan, Cecilia Mascolo, <b> Dong Ma</b><sup>†</sup>.  </li>
+			    <li><span class="label label-success">ArXiv</span> <a target="_blank" href="https://arxiv.org/abs/2506.01737">"The Promise of Spiking Neural Networks for Ubiquitous Computing: A Survey and New Perspectives"</a> <br> Hemanth Sabbella*, Archit Mukherjee*, Thivya Kandappu, Sounak Dey, Arpan Pal, Archan Misra, <b> Dong Ma</b><sup>†</sup>.  </li>		    
+			</ul>
+   
+			    
+                    <h3> Journals </h3>  
+                        <ul>
+				<li><span class="label label-success">Nature Communication'25</span> <a target="_blank" href="https://">"Measuring Cardiac Stroke Volume Through In-ear Audio Sensing."</a> <br> Kayla-Jade Butkow, Navazh Jalaludeen, Yang Liu, Jake Stuchbury-Wass, Qiang Yang, Mathias Ciliberto, <b> Dong Ma</b>, Joseph Cheriyan, Cecilia Mascolo. <br> </li>
+				<li><span class="label label-success">IEEE IMWUT'25</span> <a target="_blank" href="https://dl.acm.org/journal/imwut">"EarMeter: Continuous Respiration Volume Monitoring with Earables"</a> <br> Yang Liu, Qiang Yang, Kayla-Jade Butkow, Jake Sutchbury-Wass, <b> Dong Ma</b>, Cecilia Mascolo.  <br> The Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies. </li>
+				<li><span class="label label-success">IEEE IMWUT'25</span> <a target="_blank" href="https://dl.acm.org/journal/imwut">"HearForce: Force Estimation for Manual Toothbrushing with Earables"</a> <br> Qiang Yang, Yang Liu, Jake Sutchbury-Wass, Mathias Ciliberto, Tobias Roedigger, Kayla-Jade Butkow, Adam Pullin, Emeli Panariti, <b> Dong Ma</b>, Cecilia Mascolo.  <br> The Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies. </li>
+			    <li><span class="label label-success">IEEE TMC'25</span> <a target="_blank" href="https://dl.acm.org/doi/10.1145/3699793">"Towards Diverse Tiny-Model Selection for Microcontrollers"</a> <br> Xiao Ma, Shengfeng He, Hezhe Qiao, <b> Dong Ma</b><sup>†</sup>.  <br> IEEE Transaction on Mobile Computing. </li>
+			    <li><span class="label label-success">Nature Scientific Data'25</span> <a target="_blank" href="https://www.nature.com/articles/s41597-025-04453-7">"WF-PPG: A Wrist-finger Dual-Channel Dataset for Studying the Impact of Contact Pressure on PPG Morphology"</a> <br> Matthew Yiwen Ho, Hung Manh Pham, Aaqib Saeed, <b> Dong Ma</b><sup>†</sup>.  <br> Nature Scientific Data. </li>		    
+			    <li><span class="label label-success">ACM IMWUT'24</span> <a target="_blank" href="https://dl.acm.org/doi/10.1145/3699793">"LR-Auth: Towards Practical Implementation of Implicit User Authentication on Earbuds"</a> <br> Changshuo Hu, Xiao Ma, Xinger Huang, Yiran Shen, <b> Dong Ma</b><sup>†</sup>.  <font color="red">(Distinguished Paper Award) </font> <br> The Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies. </li>
+			    <li><span class="label label-success">Archives of Gerontology and Geriatrics</span> <a target="_blank" href="https://pdf.sciencedirectassets.com/271271/1-s2.0-S0167494324X00114/1-s2.0-S0167494324003236/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHcaCXVzLWVhc3QtMSJIMEYCIQCau5PNkcq2yut8Bqcj3gNNBrKjdua9k18oZGL%2FaJ7XOwIhALby%2BIFCNDOuw9gZXYhGWkrOHNAbKNUixJUok%2FoJ06eRKrMFCD8QBRoMMDU5MDAzNTQ2ODY1IgwYZFW13tnpXVK7AuwqkAXobDQ4rqjBbYVkKGRIKNQuMyaqQHa4hRxs3%2FwGqv%2FEbL5L0pBg9FH823s4PtlCz5girh8rZAshpOdeO4epNPWKzcG4BqDmL8DFOP6ghY5X3KaJy8ZizZV0IJ8qPH5cXdZ7BLBz7EV6ZXKvIhCes07eFKCyf9AP5%2BZJ7heKpm%2BUP7%2FmOTDJFEMaXmzKmTPA2MkrfnfOoDt2Shwwc7ZfP2nGRwt365B9tAv8ixJzZ%2B41%2B4v%2FcShdm%2FY%2FvdwzkgDcU4Z%2BJVgT6XMV7bMWCqPG31qYoyHq9aQwWN%2F%2F8pxiSN7IblLkGVQA2gNVRFDYz4xzD1mnK%2FoVC7%2FAQg9XtPiKPJN4s5FQu19YgXmYBO7knEgR7naFk4S9wLL8NpPBSIRf7iiAYMUTogSGcO5Ha5V7A3oXtfOkOQ3QETx7h8u9vVK%2B%2FsfGR0pURm5Fhz92hIPjlyxkyxPzeHfBpciDn25PcG4ULizKyJt7BRYXmNn5PsDB0SLS%2BlY1mPnM%2BBJyrQMVSfcuYLXNGk%2FcQOjDufD%2Bya4Un230RHQjhHHQvPV%2FJAEYhqF7X9s2ejiCo%2BFbfK70yIevxRwLQKnZAeeyMDXSCj2AvgGai576YMlcdLqSepxiM20gCtq9P6r9Qwva60P6ej4uvmRqjDdzUSCFyC4uQqAzvh3u%2FVz%2F0LZ7e7k2PYL05uk9A%2FKHZEih%2FdouBBcXx3eKZkFVac%2BmPCRzbYAWtr4mDc4wIHdgnqiXxCFTsDxoubQTe6YNNtHOSATaVa3%2BYGi3%2FRlKSh%2B5FscoB12XKQxbxpQXr3oGmaEKCZiu5MmNLO5IlpneXNyJUtP0FIhy%2F5HfhEnZUEgvwyPo3EsOTbc1woa%2BLrYa6zB47Sfxs26RSzDuqYS7BjqwAe0qky3siB72iF7AIw9say2gScnSLbxVhNJdXOkep81%2BdvtwLyomQzZhPs2aX4ULtE2SibyaGec3OUmlrbRWBWgrfC8RUuYAeAN89y5wrlXcUDz5vMXQJcKfq9gg2VrI0TB7EuqirwmKZOrlh1VFBgjOrH5wQlhLiUNSjBIDKKmb9NBgNj0zzKXxlihhYFgvClLgSy9%2FdXOuPs0TAiKgzOi2hQQFn6QGBgu5aMMRI6Ar&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241217T064354Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYX7BV6C34%2F20241217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cefc7c3a790a619deb3b4edcfb1c3de532e02fd4c12e997f319aa12a4c108a91&hash=f7915358c110cdf61ab6f993f3ed890bacac0e3d5c79e14af6401612af6305ac&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0167494324003236&tid=spdf-3803c3df-c627-42b3-bfbf-908f55f8f93b&sid=9c675541757e0747452a75c-ecca6df51358gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=09015d095053095f565756&rr=8f34f1083d48fd77&cc=sg">"Exploring key factors influencing depressive symptoms among middle-aged and elderly adult population: A machine learning-based method"</a> <br> Thu Tran, Yi Zhen Tan, Sapphire Lin, Fang Zhao, Yee Sien Ng, <b> Dong Ma</b>, Jeonggil Ko, Rajesh Balan.  <br> Archives of Gerontology and Geriatrics, 2025. </li>
+			    <li><span class="label label-success">ACM IMWUT'24</span> <a target="_blank" href="https://dl.acm.org/doi/10.1145/3659607">"BreathPro: Monitoring Breathing Mode during Running with Earables"</a> <br> Changshuo Hu, Thivya Kandappu, Yang Liu, Cecilia Mascolo, <b> Dong Ma</b><sup>†</sup>.  <br> The Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies. </li>
+			    <li><span class="label label-success">PMCJ'24</span> <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1574119224000397?via%3Dihub"> "An Evaluation of Heart Rate Monitoring with In-ear Microphones Under Motion"</a>  <br> Kayla-Jade Butkow, Ting Dang, Andrea Ferlini, <b> Dong Ma</b>, Yang Liu, Cecilia Mascolo.  <br>Elsevier Pervasive and Mobile Computing Journal. </li>
+			    <li><span class="label label-success">MDPI Sensors'24</span> <a target="_blank" href="https://www.mdpi.com/1424-8220/24/2/382">"Remote Multi-Person Heart Rate Monitoring with Smart Speakers: Overcoming Separation Constraint"</a> <br> Thu Tran, <b> Dong Ma</b>, Rajesh Balan.  <br> MDPI Sensors Journal. </li>
+			    <li><span class="label label-success">IEEE IoTJ'24</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/10422771">"VibMilk: Non-intrusive Milk Spoilage Detection via Smartphone Vibration"</a> <br> Yuezhong Wu, Wei Song, Yanxiang Wang, <b> Dong Ma</b>, Weitao Xu, Mahbub Hassan, Wen Hu.  <br> IEEE Internet of Things Journal. </li>
+			    <li><span class="label label-success">ACM IMWUT'23</span> <a target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3631409">"ClearSpeech: Improving Voice Quality of Earbuds Using Both In-Ear and Out-Ear Microphones"</a>  <a href="https://www.kaggle.com/datasets/dongma878/clearspeech" class="btn btn btn-warning btn-sm active" role="button" aria-pressed="true"><b>Dataset</b></a> <br>  <b> Dong Ma</b><sup>†</sup>, Ting Dang, Ming Ding, Rajesh Balan.  <br> The Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies. </li>
+			    <li><span class="label label-success">IEEE Pervasive'22</span> <a target="_blank" href="https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=8279&context=sis_research">"Mobile Health with Head-Worn Devices: Challenges and Opportunities"</a> <br>  Andrea Ferlini*, <b> Dong Ma</b>*, Lorena Qendro*, and Cecilia Mascolo </font>.  <br> IEEE Pervasive Computing special issue on Grand Challenges in Pervasive Computing. </li>
+			    <li><span class="label label-success">ACM GetMobile'22</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3529706.3529713">"Innovative Human Motion Sensing With Earbuds"</a> <br>  <b> Dong Ma</b>, Andrea Ferlini, and Cecilia Mascolo.  <br> ACM GetMobile: Mobile Computing and Communications. </li>
+			    <li><span class="label label-success">IEEE TMC'22</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/9705168">"Recognizing Hand Gestures using Solar Cells"</a> <br>  <b> Dong Ma</b>, Guohao Lan, Changshuo Hu, Mahbub Hassan, Wen Hu, Mushfika Baishakhi Upama, Ashraf Uddin, Moustafa Youssef.  <br> IEEE Transaction on Mobile Computing. </li>
+			    <li><span class="label label-success">Nature MS&NE'22</span> <a target="_blank" href="https://www.nature.com/articles/s41378-022-00396-w">"MEMS ultrasonic transducers for safe, low-power and portable eye-blinking monitoring" </a><br> Sheng Sun, Jianyuan Wang, Menglun Zhang, Yuan Ning, <b> Dong Ma</b>, Yi Yuan, Pengfei Niu, Zhicong Rong, Zhuochen Wang and Wei Pang.  <br> Microsystems & Nanoengineering. </li> 
+                            <li><span class="label label-success">IEEE JMEMS'21</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/9614942">"Eye-tracking monitoring based on PMUT arrays" </a><br> Sheng Sun, Jianyuan Wang, Menglun Zhang, Yi Yuan, Yuan Ning, <b> Dong Ma</b>, Pengfei Niu, Yi Gong, Xiaopeng Yang and Wei Pang.  <br> IEEE Journal of Microelectromechanical Systems. </li>
+			    <li><span class="label label-success">IEEE TMC'20</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/9246290">"Simultaneous Energy Harvesting and Gait Recognition using Piezoelectric Energy Harvester"</a> <br> <b> Dong Ma</b>, Guohao Lan, Weitao Xu, Mahbub Hassan, and Wen Hu.  <br> IEEE Transaction on Mobile Computing. </li>
+                            <li><span class="label label-success">IEEE COMST'19</span> <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8944276">"Sensing, Computing,and Communication for Energy Harvesting IoTs: A Survey"</a> <br> <b> Dong Ma</b><sup>†</sup>, Guohao Lan, Mahbub Hassan, Wen Hu, and Sajal K. Das.  <br> IEEE Communications Surveys & Tutorials.</li>
+                            <li><span class="label label-success">ACM TIOT'19</span> <a target="_blank" href="https://dl.acm.org/doi/10.1145/3362124">"Capacitor Based Activity Sensing for Kinetic Powered Wearable IoTs"</a> <br> Guohao Lan, <b> Dong Ma</b><sup>†</sup>, Weitao Xu, Mahbub Hassan, and Wen Hu. <br>ACM Transactions on Internet of Things.</li>
+							<li><span class="label label-success">IEEE TITS'19</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/8730510">"EnTrans: Leveraging Energy Harvesting Signal for Transportation Mode Detection"</a> <br> Guohao Lan, Weitao Xu, <b> Dong Ma</b>, Sara Khalifa, Mahbub Hassan, and Wen Hu. <br> IEEE Transactions on Intelligent Transportation Systems. </li>
+							
+						</ul>
+						
+					<h3> Conference </h3>
+                        <ul>
+			    <li><span class="label label-success">MobiCom'25</span> <a target="_blank" href=""> "ESPIRO: Natural Pulmonary Function Monitoring via Earphone-Acquired Speech"</a>  <br> Yetong Cao, <b> Dong Ma</b>, Wentao Xie, Qian Zhang, Jun Luo.  <br>The 31st Annual International Conference on Mobile Computing and Networking. </li>
+			    <li><span class="label label-success">ICML'25</span> <a target="_blank" href="https://arxiv.org/html/2410.02131v3"> "Boosting Masked ECG-Text Auto-Encoders as Discriminative Learners"</a>  <br> Hung Manh Pham, Aaqib Saeed, <b> Dong Ma</b><sup>†</sup>.  <br>2025 Forty-Second International Conference on Machine Learning. </li>
+			    <li><span class="label label-success">CHI'25</span> <a target="_blank" href="https://dl.acm.org/doi/full/10.1145/3706598.3713893"> "SmarTeeth: Augmenting Manual Toothbrushing with In-ear Microphones"</a>  <br> Qiang Yang, Yang Liu, Jake Stuchbury-Wass, Kayla-Jade Butkow, Emeli Panariti, <b> Dong Ma</b>, Cecilia Mascolo.  <br>The ACM CHI conference on Human Factors in Computing Systems. </li>
+			    <li><span class="label label-success">Percom'25</span> <a target="_blank" href="https://mobile-systems.cl.cam.ac.uk/papers/respear.pdf"> "RespEar: Earable-Based Robust Respiratory Rate Monitoring"</a>  <br> Yang Liu*, Kayla-Jade Butkow*, Jake Stuchbury-Wass, Adam Pullin, <b> Dong Ma</b>, Cecilia Mascolo. <font color="red">(Best Paper Award) </font>  <br>In the 23rd International Conference on Pervasive Computing and Communications. </li>
+			    <li><span class="label label-success">Percom'25</span> <a target="_blank" href="https://mobile-systems.cl.cam.ac.uk/papers/walkear.pdf"> "WalkEar: Holistic Gait Monitoring using Earables"</a>  <br> Jake Stuchbury-Wass, Yang Liu, Kayla-Jade Butkow, Josh Carter, Qiang Yang, Mathias Ciliberto, Ezio Preatoni, <b> Dong Ma</b>, Cecilia Mascolo.  <br>In the 23rd International Conference on Pervasive Computing and Communications. </li>
+			    <li><span class="label label-success">Percom'24</span> <a target="_blank" href="https://arxiv.org/pdf/2403.09035.pdf"> "DiTMoS: Delving into Diverse Tiny-Model Selection on Microcontrollers"</a> <a href="https://github.com/TheMaXiao/DiTMoS" class="btn btn btn-info btn-sm active" role="button" aria-pressed="true"><b>Code</b></a> <br> Xiao Ma, Shengfeng He, Hezhe Qiao, <b> Dong Ma</b><sup>†</sup>. <font color="red">(Best Paper Award) </font>   <br>In the 22nd International Conference on Pervasive Computing and Communications. </li>
+			    <li><span class="label label-success">Percom'24</span> <a target="_blank" href="https://mobile-systems.cl.cam.ac.uk/papers/percom24.pdf"> "UR2M: Uncertainty and Resource-Aware Event Detection on Microcontrollers"</a>  <br> Hong Jia, Young D. Kwon, <b> Dong Ma</b>, Nhat Pham, Lorena Qendro, Tam Vu, Cecilia Mascolo.  <br>In the 22nd International Conference on Pervasive Computing and Communications. </li>
+			    <li><span class="label label-success">EuroVis'23</span> <a target="_blank" href="https://yong-wang.org/publication/23_EuroVis23_PrivacyMobileVis.pdf"> "Don’t Peek at My Chart: Privacy-preserving Visualization for Mobile Devices"</a>  <br> Songheng Zhang, <b> Dong Ma</b>, Yong Wang.  <br>In the 25th edition of EuroVis. </li>
+			    <li><span class="label label-success">Percom'23</span> <a target="_blank" href="https://arxiv.org/pdf/2108.09393.pdf"> "hEARt: Motion-resilient Heart Rate Monitoring with In-ear Microphones"</a>  <br> Kayla-Jade Butkow, Ting Dang, Andrea Ferlini, <b> Dong Ma</b>, Cecilia Mascolo.  <br>In the 21st International Conference on Pervasive Computing and Communications. </li>
+			    <li><span class="label label-success">HotMobile'23</span> <a target="_blank" href="https://dl.acm.org/doi/10.1145/3572864.3580332"> "Lightweight and Non-Invasive User Authentication on Earables"</a>  <br> Changshuo Hu*, Xiao Ma*, <b> Dong Ma</b><sup>†</sup>, Ting Dang.  <br>In the 24th International Workshop on Mobile Computing Systems and Applications. </li>
+			    <li><span class="label label-success">MobiCom'22</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3495243.3560533"> "PROS: an Efficient Pattern-Driven Compressive Sensing Framework for Low-Power Biopotential-based Wearable with On-chip Intelligence"</a>  <br> Nhat Pham, Hong Jia, Minh Tran, Tuan Dinh, Nam Bui, Young Kwon, <b> Dong Ma</b>, VP Nguyen, Cecilia Mascolo, Tam Vu.  <br>In the 28th ACM Annual International Conference on Mobile Computing and Networking. </li>
+			    <li><span class="label label-success">ICASSP'22</span> <a target="_blank" href="https://arxiv.org/pdf/2204.12915.pdf"> "Improving Feature Generalizability With Multitask Learning In Class Incremental Learning"</a> <br> <b> Dong Ma</b>*, Chi Ian Tang*, and Cecilia Mascolo.  <br>In the IEEE International Conference on Acoustics, Speech and Signal Processing. </li>
+			    <li><span class="label label-success">PerCom WiP'22</span> <a target="_blank" href="https://www.researchgate.net/publication/358345349_Indoor_Localization_using_Solar_Cells">"Indoor Localization using Solar Cells"</a> <br> Hamada Rizk, <b> Dong Ma</b>, Mahbub Hassan, and Moustafa Youssef. <br> In the 20th IEEE International Conference on Pervasive Computing and Communications. (Work-in-Progress)</font></li>
+			    <li><span class="label label-success">MobiCom'21</span> <a target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3447993.3483240">"EarGate: Gait-based User Identification with In-ear Microphones"</a> <a href="https://www.kaggle.com/dongma878/eargate" class="btn btn btn-warning btn-sm active" role="button" aria-pressed="true"><b>Dataset</b></a> <br> Andrea Ferlini*, <b> Dong Ma</b>*, Robert K. Harle, and Cecilia Mascolo.  <br>In the 27th ACM Annual International Conference on Mobile Computing and Networking. </li>
+                            <li><span class="label label-success">MobiSys'21</span> <a target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3458864.3467680">"OESense: Employing Occlusion Effect for In-ear Human Sensing"</a> <a href="https://www.kaggle.com/dongma878/oesense" class="btn btn btn-warning btn-sm active" role="button" aria-pressed="true"><b>Dataset</b></a> <br> <b> Dong Ma</b>, Andrea Ferlini, and Cecilia Mascolo.  <br> In the 19th ACM International Conference on Mobile Systems, Applications, and Services. </li>
+                            <li><span class="label label-success">INFOCOM'20</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/9155298">"Skin-MIMO: Vibration-based MIMO Communication over Human Skin"</a> <br> <b> Dong Ma</b>, Yuezhong Wu, Ming Ding, Mahbub Hassan, and Wen Hu. <br> In the IEEE International Conference on Computer Communications.</font></li>
+			    <li><span class="label label-success">WCNC'20</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/9120632">"Enhancing Cellular Communications for UAVs via Intelligent Reflective Surface"</a> <br> <b> Dong Ma</b>, Ming Ding, and Mahbub Hassan. <br> In the IEEE Wireless Communications and Networking Conference.</font></li>
+                            <li><span class="label label-success">IROS'20</span> <a target="_blank" href="http://ras.papercept.net/images/temp/IROS/files/0202.pdf">"SolarSLAM: Battery-free Loop Closure for Indoor Localisation"</a> <br> Bo Wei, Weitao Xu, Chengwen Luo, Guillaume Zoppi, <b> Dong Ma</b>, and Sen Wang <br> In the Proceedings of the 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems.</font></li>
+			    <li><span class="label label-success">MobiCom'19</span> <a target="_blank" href="https://dl.acm.org/doi/10.1145/3300061.3300129">"SolarGest: Ubiquitous and Energy-free Gesture Recognition using Solar Cells"</a> <a href="https://github.com/dongma0a/SolarGest_Modelling" class="btn btn btn-info btn-sm active" role="button" aria-pressed="true"><b>Simulator Code</b></a> <br> <b> Dong Ma</b>, Guohao Lan, Mahbub Hassan, Wen Hu, Mushfika Baishakhi  Upama, Ashraf Uddin, Moustafa Youssef. <br> In the 25th ACM Annual International Conference on Mobile Computing and Networking.</font></li>
+			    <li><span class="label label-success">IoTDI'18</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/8366989/">"SEHS: Simultaneous Energy Harvesting and Sensing using Piezoelectric Energy Harvester"</a> <br> <b> Dong Ma</b>, Guohao Lan, Weitao Xu, Mahbub Hassan, and Wen Hu. <br> In the 3rd ACM/IEEE International Conference on Internet of Things Design and Implementation.</font></li>
+		            <li><span class="label label-success">PerCom'18</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/8444595">"HiddenCode: Hidden Acoustic Signal Capture with Vibration Energy Harvesting"</a> <br> Guohao Lan, <b> Dong Ma</b>, Mahbub Hassan, and Wen Hu.<br> In the 16th IEEE International Conference on Pervasive Computing and Communications.</font></li>
+			    <li><span class="label label-success">MobiQuitous'17</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3144457.3144459">"CapSense: Capacitor-based Activity Sensing for Kinetic Energy Harvesting Powered Wearable Devices"</a> <br>  Guohao Lan, <b> Dong Ma</b>, Weitao Xu, Mahbub Hassan, and Wen Hu. <br> In the Proceedings of the 14th EAI International Conference on Mobile and Ubiquitous Systems.</font></li>
+							
+						</ul>
+						
+					 <h3> Workshop </h3>
+                        <ul>
+				<li><span class="label label-success">BodySys, UbiComp'25</span> <a target="_blank" href="https://dl.acm.org/">"Morphology-Aware HRV Estimation from Wrist PPG in Sedentary Scenarios"</a> <br> Changshuo Hu*, Manh Pham Hung*,  <b> Dong Ma</b>. <font color="red">(Best Paper Award) </font><br> The 11th Workshop on Body-Centric Computing Systems. </font></li>
+			    <li><span class="label label-success">COMOREA, PerCom'25</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/11038662/">"Improving Responsiveness of Fall Detection using Spiking Neural Networks"</a> <br> Hemanth Sabbella, Archit Mukherjee, Tan Jeck Chuang, Hong Yee Low, <b> Dong Ma</b>, Archan Misra. <br> 21st workshop on Context and Activity Modeling and Recognition. </font></li>
+			    <li><span class="label label-success">EarComp, UbiComp'24</span> <a target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3675094.3680521">"BrushBuds: Toothbrushing Tracking Using Earphone IMUs"</a> <br> Qiang Yang, Yang Liu, Jake Stuchbury-Wass, Kayla-Jade Butkow, <b> Dong Ma</b>, Cecilia Mascolo. <br> Fifth International Workshop on Earable Computing. </font></li>
+			    <li><span class="label label-success">TSALM, NeurIPS'24</span> <a target="_blank" href="https://openreview.net/forum?id=RWarJNYh1D&referrer=%5Bthe%20profile%20of%20Dong%20Ma%5D(%2Fprofile%3Fid%3D~Dong_Ma5)">"Revisiting Masked Auto-Encoders for ECG-Language Representation Learning"</a> <br> Manh Pham Hung, Aaqib Saeed, <b> Dong Ma</b>. <br> Time Series in the Age of Large Models. </font></li>
+			    <li><span class="label label-success">BodySys, MobiSys'24</span> <a target="_blank" href="https://mobile-systems.cl.cam.ac.uk/papers/bodysys24-dong.pdf">"Detecting Foot Strikes during Running with Earbuds"</a> <br> Changshuo Hu, Thivya Kandappu, Jake Stuchbury-Wass, Yang Liu, Anthony Tang, Cecilia Mascolo, <b> Dong Ma</b>. <br> The 10th Workshop on Body-Centric Computing Systems. </font></li>
+			    <li><span class="label label-success">BTIW, MobiSys'24</span> <a target="_blank" href="https://dl.acm.org/doi/10.1145/3267204.3267209">"How is our mobility affected as we age? Findings from a users field study of older adults conducted in an urban Asian city"</a> <br> Yi Zhen Tan, Thu Tran, Sapphire Lin, Fang Zhao, Yee Sien Ng,  <b> Dong Ma</b>, JeongGil Ko, Rajesh Balan. <br> Behavior Transformation by IoT International Workshop. </font></li>
+                            <li><span class="label label-success">WiNTECH, MobiCom'18</span> <a target="_blank" href="https://dl.acm.org/doi/10.1145/3267204.3267209">"Gesture Recognition with Transparent Solar Cells: A Feasibility Study"</a> <br> <b> Dong Ma</b>, Guohao Lan, Mahbub Hassan, Wen Hu, Mushfika Baishakhi Upama, Ashraf Uddin, Moustafa Youssef. <br>  In the 12th ACM International Workshop on Wireless Network Testbeds, Experimental Evaluation & Characterization. </font></li>
+                            <li><span class="label label-success">Persist-IoT INFOCOM'20</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/9162903">"NLC: Natural Light Communication using Switchable Glass"</a> <br> Changshuo Hu, <b> Dong Ma</b>, Mahbub Hassan, and Wen Hu. <br> In the IEEE Workshop on Pervasive Systems in the IoT era.</font></li>
+							
+						</ul>
+						
+					 <h3> Poster &#38 Demo </h3>
+                        <ul>
+			    <li><span class="label label-success">News & Views under Nature Electronics</span> <a target="_blank" href="https://www.nature.com/articles/s41928-024-01281-2">"Creating Sound Bubbles with Intelligent Headsets"</a> <br> <b> Dong Ma</b>. <br>  News & Views under Nature Electronics, Nov 2024.</font></li>
+                            <li><span class="label label-success">IPSN'20</span> <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9111017">"Poster Abstract: Data Communication using Switchable Privacy Glass"</a> <br> Changshuo Hu, <b> Dong Ma</b>, Mahbub Hassan, and Wen Hu. <br>  The 19th ACM/IEEE Conference on Information Processing in Sensor Networks.</font></li>
+			    <li><span class="label label-success">IoTDI'18</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/8367014">"Demo Abstract: Simultaneous Energy Harvesting and Sensing using Piezoelectric Energy Harvester"</a> <br> <b> Dong Ma</b>, Guohao Lan, Weitao Xu, Mahbub Hassan, and Wen Hu. <font color="red">(Best Demo Runner-up) </font> <br> In the 3rd ACM/IEEE International Conference on Internet of Things Design and Implementation. </li>
+			    <li><span class="label label-success">MobiQuitous'17</span> <a target="_blank" href="https://dl.acm.org/doi/10.1145/3144457.3144510">"Poster: Unobtrusive User Verification using Piezoelectric Energy Harvesting"</a> <br> <b> Dong Ma</b>, Guohao Lan, Weitao Xu, Mahbub Hassan, and Wen Hu. <br> In the Proceedings of the 14th EAI International Conference on Mobile and Ubiquitous Systems.</font></li>
+							
+						</ul>
+						
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+ 
+         <!-- Courses Section -->
+         <section  name="awards" id="awards">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:10px" class="col-md-12">
+                     
+                     <b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>
+                     <div class="allshow" style="display:none;" id="tab-awards-content">
+                         
+                         <hr class="star-primary">
+                         <h2>Awards and Honors </h2>
+                         <ul>
+				 			 <li>Distinguished Paper Award, ACM UbiComp, 2025.</li>
+				 			 <li>Best Paper Award, ACM BodySys, 2025.</li>
+			    			 <li>Mark Weiser Best Paper Award, IEEE PerCom, 2025.</li>
+			     			 <li>Google South Asia & Southeast Asia Research Award, Google, 2024.</li>
+			     			 <li>Mark Weiser Best Paper Award, IEEE PerCom, 2024 </li>
+                             <li>EPFL Engineering Ph.D. Summit, Switzerland, 2019. (1 out of 11 Worldwide)</li>
+                             <li>Google Ph.D. Fellowship Nominee, Australia, 2019. (1 out of 2 from UNSW)</li>
+                             <li>Student Travel Grant, ACM MobiCom 2018. </li>
+                             <li>Best Demo Runner-up Award at ACM/IEEE IoTDI 2018. </li>
+                             <li>DATA61 & CSIRO Top-up Scholarship, 2016 - 2020.</li>
+                             <li>University International Postgraduate Award (UIPA), University of New South Wales, 2016-2020.</li>
+                             <li>Outstanding graduate in Central South University, 2014.</li>
+                             <li>National Scholarship of China, 2013.</li>
+                             
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+               <!-- Service Section -->
+        <section name="service" id="service">
+            
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-7">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-service-content').toggle();">Service  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-service-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Professional Service </h2>
+                        <p>
+                        <span class="label label-warning">Editorial Service</span>
+                        
+                        <ul>    
+				<li>TPC Co-Chair: AIoTSys'25, BodySys'24@MobiSys'24, SmartWear'23@MobiCom'23.</li>
+				<li>Vice-General Chair: MobiSys'26. </li>
+				<li>General Co-Chair: Earcomp'22</a>.</li>
+				<li>Publication Co-Chair: PerCom'26, PerCom'25, HotMobile'22</a>.</li>	
+				<li>PhD Forum Co-Chair: WoWMoM'25</a>.</li>		
+				<li>Video Chair: MobiSys'22</a>.</li>    
+
+				<li>TPC member (Main Conference): SenSys'26, MobiCom'25, PerCom'25, MobiCom'24, MobiSys'24, EWSN'24, WWW'23, EWSN'23, MASSS'22.</li>
+				<li>Associate Editor: IMWUT (2024/11-).</li>
+				<li>TPC member (Workshops/Poster):IASA@MobiCom’25, SmartWear@MobiCom’25, BodySys@UbiComp’25, HumanSys@CPS-IoT Week’25, HumanSys@SenSys’24, Poster@IPSN’24, AdaAIoTSys@MobiSys’24, EarComp@UbiComp’23, IASA@CPS-IoT’23, SmartWear@MobiCom'22, EarComp@UbiComp’21.</li>
+				
+                        </ul>
+                        </span>
+                        </p>
+                        
+                        <p>
+                        <span class="label label-warning">Review Service </span>
+                        <ul>
+			    <li>2025: MobiCom, PerCom, CHI, UIST, TMC, TOSN</li>
+			    <li>2024: CHI, MobiCom, MobiSys</li>
+			    <li>2023: TMC, TON, EWSN, TII, IMWUT, WWW</li>
+			    <li>2022: TMC, TOSN, MASS, ISWC, IMWUT, WWW</li>
+                            <li>2021: TMC, TPDS, TII, MASS, IMWUT</li> 
+                            <li>2020: JSAC, IMWUT, ICC, Comnets</li> 							
+                            <li>2019: SenSys, IPSN, PerCom, IoTJ, WCNC, SigGraph</li> 
+                            <li>2018: SenSys, ICDCS, PerCom, ICCCN, Mobiquitous</li>
+                           
+                            <!-- <li> -->
+                                <!-- <b>EDBT:</b> -->
+                                <!-- <a href="http://edbticdt2018.at/?EDBT18_Committee" target="_blank"><b>2018</b></a>, -->
+                                <!-- <a href="http://edbticdt2017.unive.it/?EDBT17_Committee" target="_blank">2017</a>, -->
+                                <!-- <a href="http://edbticdt2016.labri.fr/?EDBT16_Commitee" target="_blank">2016</a> -->
+                                <!-- <i>[Intl. Conference on Extending Database Technology]</i> -->
+                            <!-- </li> -->
+                            
+                            
+                        </ul>
+                        
+                        
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+				
+
+				
+
+	<!-- Courses Section -->
+         <section  name="students" id="students">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:10px" class="col-md-12">
+                     
+                     <b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>
+                     <div class="allshow" style="display:none;" id="tab-awards-content">
+                         
+                         <hr class="star-primary">
+                         <h2>Students </h2>
+                         <ul>
+			     <li>Xiao Ma, Ph.D student, SMU, 2022.08 - present</li>
+                             <li>PHAM Hung Manh, Ph.D student, SMU, 2023.08 - present</li>
+                             <li>Changshuo Hu, Ph.D student, SMU, 2024.01 - present </li>
+                             <li>Guangrong Zhao, visiting Ph.D student from Shandong University, 2024.01 - 2025.01 </li>
+			     <li>Xiaochen Liu, visiting Ph.D student from Beijing Institute of Technology, 2024.05 - 2025.4 </li>
+			     <li>Matthew HO Yiwen, Undergraduate, SMU, 2023.06 - 2024.07 </li>
+                            
+                             
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+
+        <!-- Courses Section -->
+      <!-- <!--   <section  name="courses" id="courses"> -->
+            <!-- <div class="container lead"> -->
+                <!-- <div style="text-align: left; margin-top:10px" class="col-md-12"> -->
+                    
+                    <!-- <b class="noshow" style="display:none;" id="tab-5"> -->
+                        <!-- <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button> -->
+                    <!-- </b> -->
+                    <!-- <div class="allshow" style="display:none;" id="tab-courses-content"> -->
+                        <!-- <hr class="star-primary"> -->
+                        <!-- <h2>Courses <a href="cv.html#SECTION000110000000000000000" class="btn btn-primary">More &raquo;</a></h2> -->
+                        <!-- <ul> -->
+                            <!-- <li><span class="label label-success">EPL646</span> <a href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl646/">Advanced Topics in Databases</a> (Winter)</li> -->
+                            <!-- <li><span class="label label-default">EPL446</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl446/">Advanced Database Systems</a></li> -->
+                            <!-- <li><span class="label label-success">EPL371</span> <a href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl371">Systems Programming</a> (Spring) </li> -->
+                            <!-- <li><span class="label label-default">EPL342</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl342/">Databases</a></li> -->
+                            <!-- <li><span class="label label-success">EPL232</span> <a href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl232">Programming Techniques and Tools</a> (Winter) [formely EPL132]</li> -->
+                            <!-- <li><span class="label label-default">EPL111</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl111">Discrete Structures in Computer Science and Computation</a></li> -->
+                            <!-- <li><span class="label label-default">EPL035</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl035">Data Structures and Algorithms for ECE</a></li> -->
+                            <!-- <li><span class="label label-default">EPL032</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl032">Introduction to Programming and Problem Solving</a></li> -->
+                            <!-- <li><span class="label label-default">EPL003</span> Computer Science and Information Systems</li> -->
+                            <!-- <li><span class="label label-default">EPL001</span> Introduction to Computer Science</li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </section> -->
+        
+        <!-- Courses Section -->
+        <!-- <section name="systems" id="systems"> -->
+            <!-- <div class="container lead"> -->
+                <!-- <div style="text-align: left; margin-top:10px" class="col-md-12"> -->
+                    
+                    <!-- <b class="noshow" style="display:none;" id="tab-4"> -->
+                        <!-- <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-systems-content').toggle();">Systems  <span class="glyphicon glyphicon-chevron-down"></span></button> -->
+                    <!-- </b> -->
+                    
+                    <!-- <div class="allshow" style="display:none;" id="tab-systems-content"> -->
+                        <!-- <hr class="star-primary"> -->
+                        <!-- <h2>Systems <a href="https://dmsl.cs.ucy.ac.cy/projects.php   " class="btn btn-primary">More &raquo;</a></h2> -->
+                        <!-- <ul> -->
+                            
+                            
+                            <!-- <p> -->
+                            <!-- Our group enjoys transforming basic research results into systems and services: -->
+                            <!-- </p> -->
+                            
+                            <!-- <li><span class="label label-success">TBD</span> <a target="_blank" href="https://tbd.cs.ucy.ac.cy" target="_blank">Telco Big Data Awareness</a> (Spatial, Big Data, Decaying)</li> -->
+                            <!-- <li><span class="label label-success">Anyplace</span> <a target="_blank" href="https://anyplace.cs.ucy.ac.cy" target="_blank">Indoor Information Service</a> (Indoor, Big Data, Privacy, Prefetching)</li> -->
+                            <!-- <li><span class="label label-default">Rayzit</span> <a target="_blank" href="https://rayzit.cs.ucy.ac.cy" target="_blank">Crowd Messaging Architecture</a> (Privacy, Crowdsourcing, Mobile, Microblogging)</li> -->
+                            <!-- <li><span class="label label-default">SmartLab</span> <a target="_blank" href="https://smartlab.cs.ucy.ac.cy" target="_blank">Smartphone Cloud Computer</a> (Mobile, Cloud, Programming)</li> -->
+                            <!-- <li><span class="label label-default">Airplace</span> <a target="_blank" href="http://www2.ucy.ac.cy/~laoudias/pages/platform.html" target="_blank">Indoor Localization</a> (Indoor, Wi-Fi, Localization, Mobile)</li> -->
+                            <!-- <li><span class="label label-default">Smarttrace</span> <a target="_blank" href="https://smarttrace.cs.ucy.ac.cy" target="_blank">Trajectory Search Retrieval</a> (Trajectories, Similarity, Mobile)</li> -->
+                            <!-- <li><span class="label label-default">TVM</span> <a target="_blank" href="https://smarttrace.cs.ucy.ac.cy" target="_blank">Temporal Vector Map</a> (Indoor, Privacy, Localization)</li> -->
+                            <!-- <li><span class="label label-default">KSpot+</span> <a target="_blank" href="https://kspot.cs.ucy.ac.cy" target="_blank">Wireless Sensor Networks</a> (WSN, Data Management, Search, Retrieval)</li> -->
+                            
+                            <!-- <br><a target="_blank" href="https://dmsl.cs.ucy.ac.cy/"><img border="0" width="150" src="https://dmsl.cs.ucy.ac.cy/images/logo.png"/></a> -->
+                            <!-- <a target="_blank" href="https://github.com/dmsl/"><img border="0" width="250" src="images/github-logo.png"/></a> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </section> --> -->
+		
+		
+		<!-- Talks Section -->
+         <section  name="talks" id="talks">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:10px" class="col-md-12">
+                     
+                     <b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>
+                     <div class="allshow" style="display:none;" id="tab-talks-content">
+                         
+                         <hr class="star-primary">
+                         <h2>Presentations and Talks </h2>
+                         <ul>	
+				 			<li><span class="label label-default">Talk</span>  In-ear Microphone - Beyond Active Noise Cancellation, at NTU, Zhejiang Univerisity, Shenzhen University, 2023.</li>
+							 <li><span class="label label-default">Keynote</span>  OESense: Employing Occlusion Effect for In-ear Human Sensing. Research Students Symposium at University of Cambridge. May 2021, Online.</li>
+                             <li><span class="label label-default">Talk</span>  Activity Recognition Through In-ear Microphone Sensing. Mini Workshop at Nokia Bell Lab. May 2021, Online.</li>
+							 <li><span class="label label-default">Conference Presentation</span>  Skin-MIMO: Vibration-based MIMO Communication over Human Skin. INFOCOM 2020. July 2020, Online.</li>
+							 <li><span class="label label-default">Conference Presentation</span>   Enhancing Cellular Communications for UAVs via Intelligent Reflective Surface. WCNC 2020. May 2020, Online.</li>
+							 <li><span class="label label-default">Conference Presentation</span>  SolarGest: Ubiquitous and Battery-free Gesture Recognition using Solar Cells. MobiCom 2019. Octorber 2019, Los Cabos, Mexicoe.</li>
+							 <li><span class="label label-default">Talk</span>  Transformative Context Sensing for Energy Harvesting IoTs. EPFL Engineering PhD Summit. Octorber 2019, Lausanne, Switzerland.</li>
+							 <li><span class="label label-default">Conference Presentation</span>   Gesture Recognition with Transparent Solar Cells: A Feasibility Study.  WiNTECH, MobiCom Workshop 2018. November 2018, New Delhi, India.</li>
+							 <li><span class="label label-default">Conference Presentation</span>  SEHS: Simultaneous Energy Harvesting and Sensing using Piezoelectric Energy Harvester. IoTDI 2018. April 2018, Orlando, USA.</li>
+							 <li><span class="label label-default">Conference Presentation</span>   CapSense: Capacitor-based Activity Sensing for Kinetic Energy Harvesting Powered Wearable Devices. MobiQuitous 2017. November 2017, Melbourne, Australia.</li>
+							
+                             
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </section>
+        
+        
+
+        
+        <!-- Courses Section -->
+        <!-- <section name="advising" id="advising"> -->
+            <!-- <div class="container lead"> -->
+                <!-- <div style="text-align: left; margin-top:10px" class="col-md-12"> -->
+                    
+                    <!-- <b class="noshow" style="display:none;" id="tab-8"> -->
+                        <!-- <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-advising-content').toggle();">Advising  <span class="glyphicon glyphicon-chevron-down"></span></button> -->
+                    <!-- </b> -->
+                    <!-- <div class="allshow" style="display:none;" id="tab-advising-content"> -->
+                        
+                        <!-- <hr class="star-primary"> -->
+                        <!-- <h2>Advising <a href="cv.html#SECTION000120000000000000000" class="btn btn-primary">More &raquo;</a></h2> -->
+                        <!-- <ul> -->
+                            <!-- <li> -->
+                                <!-- <span class="label label-success">Postdoc</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~gchatzim/">George Chatzimilioudis</a>, Researcher at MTN, Cyprus. -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <span class="label label-success">Postdoc</span> <a target="_blank" href="http://staff.frederick.ac.cy//com.ca/AndreasConstantinides/">Andreas Konstantinidis</a>, Lecturer at Frederick University, Cyprus. -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <span class="label label-success">Postdoc</span> <a target="_blank" href="http://www2.ucy.ac.cy/~laoudias/">Christos Laoudias</a>, Researcher at KIOS Research Center, Cyprus. -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <span class="label label-success">Ph.D.</span> (completed) <a target="_blank" href="http://www.uclancyprus.ac.cy/en/courses/school-sciences/academics/panayiotis-andreou">Panayiotis Andreou</a>, Assistant Professor at University of Central Lancashire, Cyprus. </span> -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <span class="label label-success">Ph.D.</span> (completed) <a target="_blank" href="https://www.cs.ucy.ac.cy/~cs07cc6/">Constantinos Costa</a>, Instructor/Researcher, University of Cyprus, Cyprus. -->
+                            <!-- </li> -->
+                           <!-- <!-- <li> -->
+                                <!-- <span class="label label-info">Ph.D.</span> (ongoing) <a target="_blank" href="https://www.cs.ucy.ac.cy/~glarko01/">Georgios Larkou</a>, University of Cyprus, Cyprus. -->
+                            <!-- </li>--> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </section> -->
+        
+        <!-- Home Section -->
+        <!-- <section name="links" id="links"> -->
+            <!-- <div class="container lead"> -->
+                <!-- <div style="text-align: left; margin-top:10px" class="col-md-12"> -->
+                    
+                    <!-- <b class="noshow" style="display:none;" id="tab-9"> -->
+                        <!-- <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-links-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-down"></span></button> -->
+                    <!-- </b> -->
+                    
+                    <!-- <div class="allshow" style="display:none;" id="tab-links-content"> -->
+                        
+                        <!-- <hr class="star-primary"> -->
+                        <!-- <h2>Random Links</h2> -->
+                        <!-- <ul> -->
+                            <!-- <li><span class="label label-success"><a target="_blank" href="https://www.cs.ucy.ac.cy/colloquium/"><font color="white">Colloquium</font></a></span> I am the Computer Science Colloquium Coordinator.</li> -->
+                            <!-- <li><span class="label label-default"><a target="_blank" href="http://www.homepages.ucl.ac.uk/~uccazei/"><font color="white">Brother</font></a></span> My brother's website at UCL, UK.</li> -->
+                            <!-- <li><span class="label label-info"><a target="_blank" href="https://smartlib.cs.ucy.ac.cy/scripts/exportBooks.php?mykey=0a05bb77edad7395da818f361f8115a2"><font color="white">Books</font></a></span> My book collection constructed using our <a target="_blank" href="https://smartlib.cs.ucy.ac.cy/">SmartLib project.</a></li> -->
+                            <!-- <li><span class="label label-danger"><a target="_blank" href="https://code.org/learn"><font color="white">Hour-of-Code</font></a></span> I support the hour of code iniative as a volunteer instructor.</a></li> -->
+                            <!-- <li><span class="label label-primary"><a target="_blank" href="https://github.com/dmsl"><font color="white">Github</font></a></span> I support open-source code development.</a></li> -->
+                            <!-- <li><span class="label label-warning"><a target="_blank" href="http://www.kyreniaship.org/"><font color="white">Kyrenia-Chrysocava</font></a></span> A project aimed to preserve the cultural heritage of the <a target="_blank" href="https://en.wikipedia.org/wiki/Kyrenia_ship">Kyrenia ship</a>.</li> -->
+                            <!-- <li><span class="label label-success"><font color="white">Cycling</font></span> My favorite hobby besides programming :-)</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </section> -->
+        
+        <!-- Home Section -->
+        <!-- <section  name="contact" id="contact"> -->
+            <!-- <div class="container lead"> -->
+                <!-- <div style="text-align: left; margin-top:10px" class="col-md-12"> -->
+                    
+                    <!-- <b class="noshow" style="display:none;" id="tab-10"> -->
+                        <!-- <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-contact-content').toggle();">Contact  <span class="glyphicon glyphicon-chevron-down"></span></button> -->
+                    <!-- </b> -->
+                    <!-- <div class="allshow" style="display:none;" id="tab-contact-content"> -->
+                        
+                        <!-- <hr class="star-primary"> -->
+                        <!-- <h2>Contact</h2> -->
+                        <!-- <div class="container lead"> -->
+                            <!-- <div align="left" class="col-md-3"> -->
+                                <!-- <h4 class="myEN"> -->
+                                    <!-- POSTAL ADDRESS (EN | <a target="_blank" onclick="javascript:$('.myEN').hide();$('.myEL').show();">EL</a>) -->
+                                <!-- </h4> -->
+                                
+                                <!-- <h4 class="myEL" style="display:none"> -->
+                                    <!-- ΤΑΧΥΔΡΟΜ. ΔΙΕΥΘ. (<a target="_blank" onclick="javascript:$('.myEN').show();$('.myEL').hide();">EN</a> | EL) -->
+                                <!-- </h4> -->
+                                
+                                <!-- <p class="myEL" style="display:none"> -->
+                                <!-- Δημήτρης Ζεϊναλιπούρ<br> -->
+                                <!-- Τμήμα Πληροφορικής<br> -->
+                                <!-- Πανεπιστήμιο Κύπρου<br> -->
+                                <!-- Τ.Θ. 20537<br> -->
+                                <!-- 1678 Λευκωσία, ΚΥΠΡΟΣ<br> -->
+                                <!-- </p> -->
+                                
+                                <!-- <p class="myEN"> -->
+                                <!-- Demetris Zeinalipour<br> -->
+                                <!-- Dept. of Computer Science<br> -->
+                                <!-- University of Cyprus<br> -->
+                                <!-- P.O. Box 20537<br> -->
+                                <!-- 1678 Nicosia, CYPRUS<br> -->
+                                <!-- </p> -->
+                                <!-- Email: -->
+                                <!-- <script language="JavaScript"> -->
+                                    <!-- <!-- -->
+                                    <!-- document.write("&nbsp;"); -->
+                                    <!-- spiderjam('dzeina','cs.ucy.ac.cy'); -->
+                                    <!-- --> -->
+                                    <!-- </script><br> -->
+                            <!-- </div> -->
+                            
+                            <!-- <div align="left" class="col-md-3"> -->
+                                <!-- <h4>CONTACT VCARD</h4> -->
+                                <!-- <p> -->
+                                <!-- <a href="zeinalipour.vcf"><img src="images/zeinalipour-qr.gif" border="0" width="150"><br> -->
+                                    <!-- https://goo.gl/ndCbTg</a> -->
+                                
+                                  <!-- <a href="zeinalipour.vcf" class="btn btn-primary">Get VCF Card &raquo;</a> -->
+                                <!-- </p> -->
+                            <!-- </div> -->
+                            
+                            <!-- <div align="left" class="col-md-3"> -->
+                                <!-- <h4>OFFICE ADDRESS</h4> -->
+                                <!-- <p>B106, Computer Science,<br/> -->
+                                <!-- Building FST-01,<br/> -->
+                                <!-- 1 University Avenue,<br/> -->
+                                <!-- 2109 Aglantzia, CYPRUS<br/> -->
+                                <!-- Tel: <a href="tel:0035722892755">+357-22892755</a><br/> -->
+                                <!-- Fax: <a href="tel:0035722892701">+357-22892701</a><br/> -->
+                                <!-- <br/> -->
+                                <!-- </p> -->
+                            <!-- </div> -->
+                            
+                            <!-- <div align="left" class="col-md-3"> -->
+                                <!-- <h4>OFFICE DIRECTIONS</h4> -->
+                                <!-- <p><a href="https://goo.gl/RLbcXM" target="_blank"><img src="images/anyplace-directions.jpg" border="0" -->
+                                    <!-- width="150"> <br>https://goo.gl/RLbcXM</a> -->
+                                <!-- </p> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <hr class="star-primary"> -->
+                    <!-- </div> -->
+                    
+                    <!-- </section> -->
+        
+        <!-- <hr class="star-primary"> -->
+        <!-- <footer> -->
+            <!-- <small> -->
+                <!-- <center> -->
+                    <!-- © 2015 | D. Zeinalipour. Credits: AR template -->
+                    <!-- <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a> -->
+                    <!-- <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence: -->
+                        <!-- <a href="https://github.com/dmsl/academic-responsive-template" target="_blank"> -->
+                            <!-- https://github.com/dmsl/academic-responsive-template -->
+                        <!-- </a> ] -->
+                    <!-- </div> -->
+                <!-- </center> -->
+            <!-- </small> -->
+        <!-- </footer> -->
+        
+    </body>
+    
+</html>
